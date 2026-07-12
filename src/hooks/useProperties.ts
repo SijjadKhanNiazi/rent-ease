@@ -19,7 +19,7 @@ export function useCreateProperty() {
       // Invalidate the cache to trigger a silent background refetch
       queryClient.invalidateQueries({ queryKey: ["properties"] });
     },
-  });
+  }); ///
 }
 export function useGetProperties() {
   return useQuery({
