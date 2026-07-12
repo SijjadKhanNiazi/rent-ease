@@ -1,0 +1,62 @@
+.layoutWrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 2rem;
+  margin-left: 260px;
+  margin-top: 70px;
+  transition: margin-left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc(100% - 260px);
+}
+
+.mainContentFull {
+  margin-left: 0;
+  width: 100%;
+}
+
+.topBar {
+  height: 70px;
+  background-color: var(--sidebar-bg);
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 90;
+}
+
+.topBarFull {
+  left: 0;
+}
+
+.toggleBtn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+  transition: background-color 0.2s ease;
+}
+
+.toggleBtn:hover {
+  background-color: var(--background);
+}
+
+.userInfo {
+  font-weight: 500;
+  color: var(--text-muted);
+}

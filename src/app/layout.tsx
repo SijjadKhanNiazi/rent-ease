@@ -1,4 +1,4 @@
-import "@/app/global.css";
+import "./global.css";
 import QueryProvider from "@/components/providers/QueryProvider";
 import type { Metadata } from "next";
 
