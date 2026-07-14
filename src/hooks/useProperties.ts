@@ -14,7 +14,7 @@ export function useCreateProperty() {
         throw new Error(result.error);
       }
       return result;
-    }, ////huh errors
+    },
     onSuccess: () => {
       // Invalidate the cache to trigger a silent background refetch
       queryClient.invalidateQueries({ queryKey: ["properties"] });
